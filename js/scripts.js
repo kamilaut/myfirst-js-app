@@ -4,11 +4,14 @@ let pokemonList = [
   { name: "Chansey", height: 1.1, type: 'normal' , skills: ['Natural-cure', 'Serene-grace', 'Healer']}
 ];
 
-for (let i=0; i<pokemonList.length; i++) {
+for (let i = 0; i<pokemonList.length; i++) {
+
+  document.write("<p>" + pokemonList[i].name + ' (height:' + pokemonList[i].height +  ')');
+
   //writes special text for pokemons with a height over 1
   if (pokemonList[i].height>1) {
-    document.write('<p>' + pokemonList[i].name + ' (height: ' + pokemonList[i].height + ') - Wow, that\'s big!</p>')
-  } else {
-    document.write('<p>' + pokemonList[i].name + ' (height: ' + pokemonList[i].height + ')</p>')
+    document.write(" - Wow, that\'s big!"</p>")
   }
+
+  document.write("</p>")
 }
