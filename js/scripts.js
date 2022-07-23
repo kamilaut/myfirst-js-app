@@ -5,10 +5,10 @@ let pokemonList = [
 ];
 
 for (let i=0; i<pokemonList.length; i++) {
-    //writes special text for pokemons with a height over 1
-    if (pokemonList[i].height>1) {
-        document.write('<p>' + pokemonList[i].name + ' (height: ' + pokemonList[i].height + ') - Wow, that\'s big!')
-    } else {
-        document.write('<p>' + pokemonList[i].name + ' (height: ' + pokemonList[i].height + ')</p>')
-    }
+  //writes special text for pokemons with a height over 1
+  if (pokemonList[i].height>1) {
+    document.write('<p>' + pokemonList[i].name + ' (height: ' + pokemonList[i].height + ') - Wow, that\'s big!'</p>')
+  } else {
+    document.write('<p>' + pokemonList[i].name + ' (height: ' + pokemonList[i].height + ')'</p>')
+  }
 }
