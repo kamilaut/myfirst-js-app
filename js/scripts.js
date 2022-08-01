@@ -10,7 +10,7 @@ for (let i = 0; i<pokemonList.length; i++) {
 
   //writes special text for pokemons with a height over 1
   if (pokemonList[i].height>1) {
-    document.write(" - Wow, that\'s big!"</p>")
+    document.write(" - Wow, that\'s big!</p>")
   }
 
   document.write("</p>")
