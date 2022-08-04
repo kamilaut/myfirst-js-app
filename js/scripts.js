@@ -30,5 +30,14 @@ let pokemonRepository = (function () {
 })();
 
 
-console.log(pokemonRepository.getAll());//[]
-pokemonRepository.add({name: "Pikachu"});
+pokemonRepository.getAll().forEach(function(pokemon) {
+  document.write ('<p>');
+
+  document.write("Pokemon name is " + pokemon.name + " is " pokemon.height);
+
+  if (pokemonList[i].height>1) {
+    document.write(" - Wow, that's big!");
+  }
+
+  document.write("</p>")
+})
