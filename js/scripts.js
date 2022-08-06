@@ -33,7 +33,7 @@ let pokemonRepository = (function () {
 pokemonRepository.getAll().forEach(function(pokemon) {
   document.write ('<p>');
 
-  document.write("Pokemon name is " + pokemon.name + " and they are " + pokemon.height + " in height.");
+  document.write("Pokemon name is " + pokemon.name + " and they are " + pokemon.height + " in height");
 
   if (pokemon.height>1) {
     document.write(", - Wow, that's big!");
