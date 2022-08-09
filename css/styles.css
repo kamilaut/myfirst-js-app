@@ -1,0 +1,17 @@
+.button-class {
+  background-color: #E6F3F0; /* Green */
+  border: none;
+  color: #296879;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #6F99A5;
+  color:  #8CEDC1 ;
+  border: 2px solid #9BC7CB;
+}
