@@ -114,4 +114,3 @@ pokemonRepository.loadList().then(function () {
 }
 
 document.write("</p>")*/
-})
