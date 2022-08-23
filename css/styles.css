@@ -1,18 +1,131 @@
-.button-class {
-  background-color: #E6F3F0; /* Green */
-  border: none;
-  color: #296879;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  background-color: #6F99A5;
-  color: #8CEDC1 ;
-  border: 2px solid #9BC7CB;
+*
+body {
+  background-color: white;
 }
 
+{
+  box-sizing: border-box;
+}
+
+.pokemon-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.pokemon-list>li {
+  display: flex;
+  flex: 0 0 30%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-button {
+  width: 100%;
+  padding: 1.5rem;
+  margin: 0.5rem;
+  border: 0.5px solid lightgrey;
+  border-radius: 3px;
+  box-shadow: 296879;
+  cursor: pointer;
+  border: 2px solid #ada4b2;
+  font-weight: 600;
+  font-size: 16px;
+  color: rgb(98, 95, 95);
+}
+
+.my-button:hover {
+  background-color: azure;
+  color: mediumaquamarine;
+  border-color: rgb(28, 143, 143);
+}
+
+.pokemon {
+  background-color: #9BC7CB ;
+}
+
+#modal-container {
+  position: fixed;
+  padding: 20px;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* to show it above other content */
+  z-index: 999;
+  /* to allow scrolling if the screen is not high enough*/
+  overflow: auto;
+  display: none;
+  text-align: center;
+}
+
+#modal-container.is-visible {
+  display: block;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 15px;
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+}
+
+.modal-close {
+  align-self: flex-end;
+  -webkit-appearance: none;
+  border: 0;
+  background: none;
+  color: #15414D;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.pokemon-info {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.pokemon-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 32px;
+}
+
+.pokemon-nav {
+  cursor: pointer;
+  user-select: none;
+}
+
+.pokemon-nav--disabled {
+  visibility: hidden;
+}
+
+.modal h1 {
+  margin-top: 0;
+}
+
+.modal p {
+  margin-bottom: 0;
+}
+
+@media all and (max-width: 720px) {
+  .pokemon-list>li {
+    flex: 0 0 45%;
+  }
+}
