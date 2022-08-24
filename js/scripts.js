@@ -1,23 +1,10 @@
-/* 1.6
-let pokemonRepository = (function () {
+let container = document.querySelector('#image-container');
 
-let pokemonList = [
-{ name: "Nidorino", height: 0.9,
-type: 'poison' ,
-skills: ['Poison-point, Hustle, Rivalry']},
+let myImage = document.createElement('img');
 
-{ name: "Wigglytuff",
-height: 1.0, type: 'fairy' ,
-skills: ['Cute-charm', 'Frisk']},
+myImage.src = 'https://cdn.icon-icons.com/icons2/851/PNG/128/pokemon_pokecenter_icon-icons.com_67517.png';
 
-{ name: "Chansey",
-height: 1.1,
-type: 'normal' ,
-skills: ['Natural-cure', 'Serene-grace', 'Healer']}
-];
-
-*/
-
+container.appendChild(myImage);
 
 let pokemonRepository = (function () {
   let pokemonList = [];
@@ -116,3 +103,23 @@ pokemonRepository.loadList().then(function () {
 }
 
 document.write("</p>")*/
+
+/* 1.6
+let pokemonRepository = (function () {
+
+let pokemonList = [
+{ name: "Nidorino", height: 0.9,
+type: 'poison' ,
+skills: ['Poison-point, Hustle, Rivalry']},
+
+{ name: "Wigglytuff",
+height: 1.0, type: 'fairy' ,
+skills: ['Cute-charm', 'Frisk']},
+
+{ name: "Chansey",
+height: 1.1,
+type: 'normal' ,
+skills: ['Natural-cure', 'Serene-grace', 'Healer']}
+];
+
+*/
