@@ -188,20 +188,20 @@ let pokemonRepository = (function () {
 
   })();
 
-//   return {
-//     getAll: getAll,
-//     add: add,
-//     addListItem: addListItem,
-//     loadList: loadList,
-//     loadDetails: loadDetails,
-//     showDetails: showDetails
-//   }
-// })();
-//
-// pokemonRepository.loadList().then(function () {
-//   pokemonRepository.getAll().forEach(function (pokemon) {
-//     pokemonRepository.addListItem(pokemon);
-//   });
+return {
+getAll: getAll,
+add: add,
+addListItem: addListItem,
+loadList: loadList,
+loadDetails: loadDetails,
+showDetails: showDetails
+}
+})();
+
+pokemonRepository.loadList().then(function () {
+pokemonRepository.getAll().forEach(function (pokemon) {
+pokemonRepository.addListItem(pokemon);
+});
 });
 
   /* 1.5
