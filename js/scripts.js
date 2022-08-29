@@ -83,6 +83,9 @@ let pokemonRepository = (function () {
     let contentElement = document.createElement('p');
     contentElement.innerText = pokemon.name;
 
+    let pokemonContainerElement = document.createElement('div');
+    pokemonContainerElement.classList.add('pokemon-container');
+
     let imgElement = document.createElement('img');
     imgElement.classList.add('img-element');
     imgElement.src = pokemon.imageUrl;
@@ -92,6 +95,7 @@ let pokemonRepository = (function () {
     modal.appendChild(contentElement);
     modalContainer.appendChild(modal);
     modal.appendChild(imgElement);
+    modal.appendChild(pokemonContainerElement);
 
 
     modalContainer.classList.add('is-visible');
