@@ -32,11 +32,11 @@ let pokemonRepository = (function () {
   }
 
   function showDetails(pokemon) {
-  loadDetails(pokemon).then(function () {
-    showModal(pokemon);
-    console.log(pokemon);
-  });
-}
+    loadDetails(pokemon).then(function () {
+      showModal(pokemon);
+      console.log(pokemon);
+    });
+  }
 
   function loadList() {
     return fetch(apiUrl).then(function (response) {
@@ -99,14 +99,14 @@ let pokemonRepository = (function () {
 
   function hideModal() {
     modalContainer.classList.remove('is-visible');
-    }
-window.addEventListener('keydown', (e) => {
+  }
+  window.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
       hideModal();
     }
   });
 
-modalContainer.addEventListener('click', (e) => {
+  modalContainer.addEventListener('click', (e) => {
     // Since this is also triggered when clicking INSIDE the modal
     // We only want to close if the user clicks directly on the overlay
     let target = e.target;
