@@ -15,17 +15,10 @@ body {
 
 .pokemonList>li {
   display: flex;
-  flex: 0 0 20%;
+  flex: 0 0 30%;
   text-align: center;
   justify-content: center;
   align-items: center;
-}
-
-.pokemon-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 32px;
 }
 
 .name-button {
@@ -44,7 +37,7 @@ body {
 }
 
 #modal-container {
-  display: block;
+  display: none;
 }
 
 #modal-container.is-visible {
@@ -69,7 +62,6 @@ body {
   text-align: center;
 }
 .modal {
-  position: flex;
   left: 50%;
   top: 50%;
   margin: auto;
@@ -102,7 +94,7 @@ body {
 }
 
 @media all and (max-width: 720px) {
-  .pokemon-list>li {
-    flex: 0 0 20%;
+  .pokemonList>li {
+    flex: 0 0 30%;
   }
 }
