@@ -1,7 +1,13 @@
+
 body {
   background: linear-gradient(to right bottom, #9BC7CB , #8CEDC1 );
   font-family: Source Sans Pro;
 }
+
+:root{
+  --light: linear-gradient(to right bottom, #9BC7CB , #8CEDC1 );
+  --background: linear-gradient(to right bottom, #9BC7CB , #E6F3F0 );
+  }
 
 .pokemonList {
   column-count:3;
