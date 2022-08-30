@@ -1,6 +1,3 @@
-* {
-  box-sizing: border-box;
-}
 body {
   background: linear-gradient(to right bottom, #9BC7CB , #8CEDC1 );
   font-family: Source Sans Pro;
@@ -51,9 +48,6 @@ body {
   background: rgba(0, 0, 0, 0.5);
   display: block;
 
-  /* to show it above other content */
-  z-index: 999;
-
   /* to allow scrolling if the screen is not high enough*/
   overflow: auto;
 
@@ -83,14 +77,6 @@ body {
   height: 16px;
   text-decoration: underline;
   float: right;
-}
-
-.modal h1 {
-  margin-top: 0;
-}
-
-.modal p {
-  margin-bottom: 0;
 }
 
 @media all and (max-width: 720px) {
