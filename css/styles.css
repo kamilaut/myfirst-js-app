@@ -6,7 +6,7 @@ body {
 :root{
   --light: linear-gradient(to right bottom, #9BC7CB , #8CEDC1 );
   --background: linear-gradient(to right bottom, #9BC7CB , #E6F3F0 );
-  }
+}
 
 .pokemonList {
   column-count:3;
@@ -24,7 +24,7 @@ body {
 }
 
 .img-element {
-height: 250px;
+  height: 250px;
 
 }
 .name-button {
@@ -65,16 +65,16 @@ height: 250px;
   text-align: center;
 }
 /*.modal {
-  left: 50%;
-  top: 50%;
-  margin: auto;
-  display: block;
-  box-sizing: border-box;
-  background: #fff;
-  padding: 15px;
-  width: 100%;
-  max-width: 700px;
-  text-align: center;
+left: 50%;
+top: 50%;
+margin: auto;
+display: block;
+box-sizing: border-box;
+background: #fff;
+padding: 15px;
+width: 100%;
+max-width: 700px;
+text-align: center;
 }
 */
 .modal-close {
