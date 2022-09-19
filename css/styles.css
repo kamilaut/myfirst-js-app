@@ -9,18 +9,18 @@ body {
 }
 
 .pokemonList {
-  column-count:3;
+  display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   list-style: none;
 }
 
 .pokemonList>li {
-  display: 100%;
   flex: 0 0 30%;
   text-align: center;
-  justify-content: center;
-  align-items: center;
+  margin: 5px 1%;
+  display: 100%;
 }
 
 .img-element {
@@ -28,6 +28,7 @@ body {
 
 }
 .name-button {
+  width: 100%;
   padding: 2rem;
   border-radius: .8rem;
   color: var(--light);
@@ -39,10 +40,4 @@ body {
   background-color: #E6F3F0 ;
   color: #296879;
   border-color: black;
-}
-
-@media all and (max-width: 720px) {
-  .pokemonList>li {
-    flex: 0 0 30%;
-  }
 }
