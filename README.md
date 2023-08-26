@@ -1,5 +1,6 @@
 # myfirst-js-app
- 
+ [![HynUM0X.md.jpg](https://iili.io/HynUM0X.md.jpg)](https://freeimage.host/i/HynUM0X)
+[![HynUGft.md.jpg](https://iili.io/HynUGft.md.jpg)](https://freeimage.host/i/HynUGft)
 ## Intro
 
 This web application utilizes HTML, CSS, and JavaScript to display Pokémon information fetched from the [Pokémon API](https://pokeapi.co/). The application provides a list of Pokémon names with buttons that open a modal displaying additional details about each Pokémon.
